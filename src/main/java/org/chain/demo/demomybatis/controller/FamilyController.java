@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
  * @program demo-mybatis
  * @description 家人控制层
  * @date 2019-11-16 15:39
- * --global user.email "you@example.com" git config --global user.name "Your Name"
  **/
 @RestController
 @RequestMapping("/family")
@@ -35,7 +34,7 @@ public class FamilyController {
     public List<FamilyDto> list() {
         List<Family> families = familyService.queryAll();
         if (!CollectionUtils.isEmpty(families)) {
-            return families.parallelStream().map(this::entityToDto).collect(Collectors.toList());
+            return families.stream().map(this::entityToDto).collect(Collectors.toList());
         }
         return Collections.emptyList();
     }

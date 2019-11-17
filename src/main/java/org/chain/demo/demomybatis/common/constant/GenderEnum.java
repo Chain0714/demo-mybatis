@@ -22,11 +22,11 @@ public enum GenderEnum {
     /**
      * Male gender enum.
      */
-    MALE(1, "男性"),
+    MALE(1, "男"),
     /**
      * Female gender enum.
      */
-    FEMALE(2, "女性");
+    FEMALE(2, "女");
 
     private Integer code;
     private String desc;
