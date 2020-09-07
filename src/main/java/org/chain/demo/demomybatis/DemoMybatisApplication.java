@@ -15,6 +15,8 @@ import java.util.List;
 
 @SpringBootApplication
 @MapperScan("org.chain.demo.demomybatis.mapper")
+
+//test 5
 public class DemoMybatisApplication implements ApplicationRunner {
 
 	public static void main(String[] args) {
