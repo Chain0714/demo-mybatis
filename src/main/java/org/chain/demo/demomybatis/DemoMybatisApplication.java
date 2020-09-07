@@ -15,6 +15,7 @@ import java.util.List;
 
 @SpringBootApplication
 @MapperScan("org.chain.demo.demomybatis.mapper")
+//test commit
 public class
 DemoMybatisApplication implements ApplicationRunner {
 
